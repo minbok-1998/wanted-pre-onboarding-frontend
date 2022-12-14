@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Navigate } from "react-router-dom";
+import TitleComponent from "../components/Title";
 
 const Cont = styled.div`
   width: 70vw;
@@ -111,7 +112,7 @@ export default function Login() {
       ) : (
         <Cont>
           <Inner>
-            <h1>로그인</h1>
+            <TitleComponent title={"로그인"} />
             <Form method="post" onSubmit={checkValidation}>
               <Lable htmlFor="inputEmail">이메일</Lable>
               <Input

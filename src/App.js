@@ -4,7 +4,7 @@ import "./App.css";
 
 const Login = lazy(() => import("./pages/Login"));
 const Signup = lazy(() => import("./pages/Signup"));
-const Todo = lazy(() => import("./pages/Todo"));
+const Todo = lazy(() => import("./pages/Todo/index"));
 const Error = lazy(() => import("./pages/Error"));
 
 function App() {
