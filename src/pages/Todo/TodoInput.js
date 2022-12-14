@@ -2,12 +2,9 @@ import { useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
 
-// axios.defaults.headers["Access-Control-Allow-Origin"] = "*";
-// axios.defaults.withCredentials = true;
-
 const Form = styled.form`
   display: flex;
-  background-color: red;
+  margin: 30px 0 0 0;
 `;
 
 const Input = styled.input`

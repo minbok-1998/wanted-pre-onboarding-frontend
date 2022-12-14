@@ -18,8 +18,8 @@ const Inner = styled.div`
   flex-direction: column;
   align-items: center;
   width: 50%;
-  margin: 100px 0 0 0;
-  background-color: yellowgreen;
+  margin: 150px 0 0 0;
+  background-color: #fff;
 `;
 
 export default function TodoPage() {
