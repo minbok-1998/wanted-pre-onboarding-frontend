@@ -3,6 +3,9 @@ import styled from "styled-components";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+// 컴포넌트import
+import ButtonComponent from "../../components/button";
+
 const Cont = styled.ul`
   width: 60%;
   margin: 50px 0 10px 0;
@@ -18,15 +21,14 @@ const List = styled.li`
 
 const TodoItem = styled.p``;
 
-const DeleteBtn = styled.button``;
-
 export default function TodoListItem() {
   const access_token = window.localStorage.getItem("token");
   const [item, setItem] = useState();
+  const [id, setId] = useState();
 
   useEffect(() => {
     getTodoItem();
-  }, []);
+  }, [item]);
 
   const headers = {
     Authorization: `Bearer ${access_token}`,
@@ -37,11 +39,24 @@ export default function TodoListItem() {
 
     try {
       const result = await axios.get(url, { headers: headers });
-
       setItem(result.data);
     } catch (err) {
       console.log(err);
     }
+  };
+
+  const deleteTodoList = async (props) => {
+    const id = props;
+    const url = `https://pre-onboarding-selection-task.shop/todos/${id}`;
+    try {
+      const result = await axios.delete(url, { headers: headers });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const updateTodoList = async () => {
+    console.log("수정");
   };
 
   return (
@@ -51,10 +66,24 @@ export default function TodoListItem() {
           return (
             <List key={el.id}>
               <TodoItem>{el.todo}</TodoItem>
-              <DeleteBtn>삭제</DeleteBtn>
+              <div>
+                <ButtonComponent btnName="수정" method={updateTodoList}>
+                  수정
+                </ButtonComponent>
+                <ButtonComponent
+                  btnName="삭제"
+                  method={() => {
+                    deleteTodoList(el.id);
+                  }}
+                >
+                  삭제
+                </ButtonComponent>
+              </div>
             </List>
           );
         })}
     </Cont>
   );
 }
+
+//  method={() => {deleteTodoList()}}
