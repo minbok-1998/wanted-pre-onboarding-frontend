@@ -33,8 +33,8 @@ export default function TodoInput() {
         { todo: todo },
         { headers: headers }
       );
-      setTodo("");
       window.location.reload();
+      setTodo("");
     } catch (err) {
       console.log(err);
     }

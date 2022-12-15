@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { Navigate } from "react-router-dom";
+import { Navigate, Link } from "react-router-dom";
 import TitleComponent from "../components/TitleComponent";
 
 // 컴포넌트 import
@@ -31,13 +31,6 @@ const Lable = styled.label`
   text-align: left;
   padding: 20px 0 0 0;
 `;
-
-// const Button = styled(ButtonComponent)`
-//   padding: 20px 0;
-//   margin: 40px 0 0 0;
-//   border-radius: 5px;
-//   font-size: 21px;
-// `;
 
 export default function Login() {
   const token = window.localStorage.getItem("token");
@@ -135,6 +128,9 @@ export default function Login() {
                 margin="40px 0 0 0"
               ></ButtonComponent>
             </Form>
+            <Link to={"/signup"}>
+              <p>회원가입</p>
+            </Link>
           </Inner>
         </Cont>
       )}

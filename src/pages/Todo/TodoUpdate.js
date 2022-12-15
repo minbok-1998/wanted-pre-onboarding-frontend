@@ -18,7 +18,7 @@ export default function TodoListUpdate(props) {
 
         <ButtonComponent
           btnName="취소"
-          // method={}
+          method={props.cancelUpdate}
         ></ButtonComponent>
       </div>
     </>

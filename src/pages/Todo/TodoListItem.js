@@ -43,7 +43,6 @@ export default function TodoListItem() {
 
     try {
       const result = await axios.get(url, { headers: headers });
-      console.log(result.data);
       setItem(result.data);
     } catch (err) {
       console.log(err);
@@ -56,8 +55,8 @@ export default function TodoListItem() {
     const url = `https://pre-onboarding-selection-task.shop/todos/${id}`;
     try {
       if (window.confirm("삭제하시겠습니까?")) {
-        const result = await axios.delete(url, { headers: headers });
         window.location.reload();
+        const result = await axios.delete(url, { headers: headers });
       }
     } catch (err) {
       console.log(err);
@@ -69,6 +68,10 @@ export default function TodoListItem() {
     isCompleted: true,
   };
 
+  const cancelUpdate = async () => {
+    setUpdateId(0);
+  };
+
   const submitUpdateVal = async (props) => {
     const id = props.id;
     const url = `https://pre-onboarding-selection-task.shop/todos/${id}`;
@@ -76,7 +79,7 @@ export default function TodoListItem() {
       if (window.confirm("수정하시겠습니까?")) {
         window.location.reload();
         const result = await axios.put(url, val, { headers: headers });
-        setUpdateId(0);
+        await cancelUpdate();
       }
     } catch (err) {
       console.log(err);
@@ -106,6 +109,7 @@ export default function TodoListItem() {
                     submitUpdateVal={() => {
                       submitUpdateVal({ id: el.id });
                     }}
+                    cancelUpdate={cancelUpdate}
                   />
                 ) : (
                   <TodoList
