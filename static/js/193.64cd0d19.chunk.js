@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwanted=self.webpackChunkwanted||[]).push([[193],{193:function(n,e,t){t.r(e),t.d(e,{default:function(){return r}});var u=t(184);function r(){return(0,u.jsx)("div",{children:(0,u.jsx)("h1",{children:"404 \uc874\uc7ac\ud558\uc9c0 \uc54a\ub294 \ud398\uc774\uc9c0 \uc785\ub2c8\ub2e4."})})}}}]);
+//# sourceMappingURL=193.64cd0d19.chunk.js.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/193.64cd0d19.chunk.js","mappings":"8JAAe,SAASA,IACtB,OACE,0BACE,8GAGN,C","sources":["pages/Error.js"],"sourcesContent":["export default function Error() {\r\n  return (\r\n    <div>\r\n      <h1>404 존재하지 않는 페이지 입니다.</h1>\r\n    </div>\r\n  );\r\n}\r\n"],"names":["Error"],"sourceRoot":""}
