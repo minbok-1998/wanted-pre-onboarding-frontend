@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import TitleComponent from "../../components/TitleComponent";
 import TodoInput from "./TodoInput";
 import TodoListItem from "./TodoListItem";
@@ -34,7 +34,7 @@ export default function TodoPage() {
           </Inner>
         </Cont>
       ) : (
-        <Link to={"/"}></Link>
+        <Navigate to={"/"} />
       )}
     </div>
   );
