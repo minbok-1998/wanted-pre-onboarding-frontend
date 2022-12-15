@@ -10,7 +10,6 @@ const Wrap = styled.div`
 
 const TodoItem = styled.p`
   margin: 0 0 0 10px;
-  /* text-decoration: ${(props) => (props.test ? "line-through" : "none")}; */
 `;
 
 export default function TodoList(props) {

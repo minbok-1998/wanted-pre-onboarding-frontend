@@ -52,8 +52,8 @@ export default function TodoListItem() {
     const url = `https://pre-onboarding-selection-task.shop/todos/${id}`;
     try {
       if (window.confirm("삭제하시겠습니까?")) {
-        window.location.reload();
         const result = await axios.delete(url, { headers: headers });
+        window.location.reload();
       }
     } catch (err) {
       console.log(err);
