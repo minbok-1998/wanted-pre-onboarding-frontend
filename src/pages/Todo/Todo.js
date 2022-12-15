@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import TitleComponent from "../../components/Title";
+import TitleComponent from "../../components/TitleComponent";
 import TodoInput from "./TodoInput";
 import TodoListItem from "./TodoListItem";
 
@@ -9,7 +9,6 @@ const Cont = styled.div`
   justify-content: center;
   width: 70vw;
   height: 100vh;
-  background-color: pink;
   margin: 0 auto;
 `;
 
@@ -19,7 +18,6 @@ const Inner = styled.div`
   align-items: center;
   width: 50%;
   margin: 150px 0 0 0;
-  background-color: #fff;
 `;
 
 export default function TodoPage() {

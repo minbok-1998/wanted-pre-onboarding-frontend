@@ -2,7 +2,11 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Navigate } from "react-router-dom";
-import TitleComponent from "../components/Title";
+import TitleComponent from "../components/TitleComponent";
+
+// 컴포넌트 import
+import InputComponent from "../components/InputComponent";
+import ButtonComponent from "../components/ButtonComponent";
 
 const Cont = styled.div`
   width: 70vw;
@@ -28,18 +32,12 @@ const Lable = styled.label`
   padding: 20px 0 0 0;
 `;
 
-const Input = styled.input`
-  padding: 20px 20px;
-  border-radius: 5px;
-  font-size: 24px;
-`;
-
-const Button = styled.button`
-  padding: 20px 0;
-  margin: 40px 0 0 0;
-  border-radius: 5px;
-  font-size: 18px;
-`;
+// const Button = styled(ButtonComponent)`
+//   padding: 20px 0;
+//   margin: 40px 0 0 0;
+//   border-radius: 5px;
+//   font-size: 21px;
+// `;
 
 export default function Login() {
   const token = window.localStorage.getItem("token");
@@ -115,22 +113,27 @@ export default function Login() {
             <TitleComponent title={"로그인"} />
             <Form method="post" onSubmit={checkValidation}>
               <Lable htmlFor="inputEmail">이메일</Lable>
-              <Input
+              <InputComponent
                 type="email"
                 name="inputId"
                 value={userEmail}
-                onChange={handleUserId}
+                method={handleUserId}
               />
               <Lable htmlFor="inputPassword">비밀번호</Lable>
-              <Input
+              <InputComponent
                 type="password"
                 name="inputPassword"
                 value={userPassword}
-                onChange={handleUserPassword}
+                method={handleUserPassword}
               />
-              <Button type="submit" disabled={!validation}>
-                로그인
-              </Button>
+              <ButtonComponent
+                type="submit"
+                disabled={!validation}
+                btnName="로그인"
+                size="21px"
+                padding="20px 0"
+                margin="40px 0 0 0"
+              ></ButtonComponent>
             </Form>
           </Inner>
         </Cont>

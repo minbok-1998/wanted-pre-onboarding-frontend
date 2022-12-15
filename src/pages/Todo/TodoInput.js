@@ -3,18 +3,12 @@ import styled from "styled-components";
 import axios from "axios";
 
 // 컴포넌트import
-import ButtonComponent from "../../components/button";
+import ButtonComponent from "../../components/ButtonComponent";
+import InputComponent from "../../components/InputComponent";
 
 const Form = styled.form`
   display: flex;
   margin: 30px 0 0 0;
-`;
-
-const Input = styled.input`
-  padding: 10px 20px;
-  margin: 0 30px 0 0;
-  border-radius: 5px;
-  font-size: 18px;
 `;
 
 export default function TodoInput() {
@@ -40,6 +34,7 @@ export default function TodoInput() {
         { headers: headers }
       );
       setTodo("");
+      window.location.reload();
     } catch (err) {
       console.log(err);
     }
@@ -47,7 +42,7 @@ export default function TodoInput() {
 
   return (
     <Form method="post" onSubmit={submitTodo}>
-      <Input value={todo} onChange={handleInputOnchange} />
+      <InputComponent value={todo} method={handleInputOnchange} />
       <ButtonComponent type="submit" btnName="저장">
         저장
       </ButtonComponent>
