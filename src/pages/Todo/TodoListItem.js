@@ -74,15 +74,9 @@ export default function TodoListItem() {
     const url = `https://pre-onboarding-selection-task.shop/todos/${id}`;
     try {
       if (window.confirm("수정하시겠습니까?")) {
-<<<<<<< HEAD
         window.location.reload();
         const result = await axios.put(url, val, { headers: headers });
         setUpdateId(0);
-=======
-        const result = await axios.put(url, val, { headers: headers });
-        setUpdateId(0);
-        window.location.reload();
->>>>>>> a2a9156695359666a9a5f01dbcc998171ff89fb7
       }
     } catch (err) {
       console.log(err);
