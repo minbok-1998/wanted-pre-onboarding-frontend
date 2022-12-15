@@ -40,6 +40,7 @@ export default function TodoInput() {
         { headers: headers }
       );
       setTodo("");
+      window.location.reload();
     } catch (err) {
       console.log(err);
     }
