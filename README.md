@@ -18,4 +18,4 @@
 
 # 배포 링크
 
-https://minbok-1998.github.io/wanted-pre-onboarding-frontend/ (빌드안됨)
+https://minbok-1998.github.io/wanted-pre-onboarding-frontend/
