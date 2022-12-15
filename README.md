@@ -15,3 +15,7 @@
 
 이메일: test6377@test.com
 비밀번호: test637712
+
+# 배포 링크
+
+https://minbok-1998.github.io/wanted-pre-onboarding-frontend/

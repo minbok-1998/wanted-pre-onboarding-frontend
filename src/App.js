@@ -10,7 +10,7 @@ const Error = lazy(() => import("./pages/Error"));
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Suspense>
           <Routes>
             <Route path="/" element={<Login />} />
