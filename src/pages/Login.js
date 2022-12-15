@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { Navigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import TitleComponent from "../components/TitleComponent";
 
 // 컴포넌트 import
@@ -99,7 +99,7 @@ export default function Login() {
   return (
     <>
       {token ? (
-        <Navigate to={"/todo"} />
+        <Link to={"/todo"}></Link>
       ) : (
         <Cont>
           <Inner>
