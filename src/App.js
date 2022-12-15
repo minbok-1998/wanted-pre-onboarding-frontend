@@ -10,7 +10,7 @@ const Error = lazy(() => import("./pages/Error"));
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="https://minbok-1998.github.io/wanted-pre-onboarding-frontend/">
+      <BrowserRouter>
         <Suspense>
           <Routes>
             <Route path="/" element={<Login />} />
