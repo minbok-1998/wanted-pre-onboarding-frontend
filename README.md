@@ -16,6 +16,7 @@
 이메일: test6377@test.com
 비밀번호: test637712
 
-# 배포 링크
+# 구동 영상
+https://user-images.githubusercontent.com/81654172/207840386-40ba0cbe-7aa8-4751-a009-68599c108e0f.mov
 
-https://minbok-1998.github.io/wanted-pre-onboarding-frontend/
+
