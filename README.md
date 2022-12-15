@@ -22,5 +22,5 @@ React, axios, react-router-dom, styled-components
 # 제작기간
 2022.12.14 ~ 2022.12.15
 
-# 구동 영상
+# 데모영상
 ![원티드 프리온보딩](https://user-images.githubusercontent.com/81654172/207855805-078fe36c-dc82-4713-9d1d-30216e5d2035.gif)
