@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 // 컴포넌트import
 import TodoListUpdate from "./TodoUpdate";
@@ -14,10 +14,7 @@ const Cont = styled.ul`
 `;
 
 const List = styled.li`
-  display: flex;
   margin: 20px 0 0 0;
-  justify-content: space-between;
-  align-items: center;
 `;
 
 export default function TodoListItem() {

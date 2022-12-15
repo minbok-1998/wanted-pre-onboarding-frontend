@@ -14,6 +14,7 @@ const Form = styled.form`
 export default function TodoInput() {
   const access_token = window.localStorage.getItem("token");
   const [todo, setTodo] = useState("");
+
   const handleInputOnchange = async (e) => {
     setTodo(e.target.value);
   };
@@ -43,7 +44,7 @@ export default function TodoInput() {
   return (
     <Form method="post" onSubmit={submitTodo}>
       <InputComponent value={todo} method={handleInputOnchange} />
-      <ButtonComponent type="submit" btnName="저장">
+      <ButtonComponent type="submit" btnName="추가">
         저장
       </ButtonComponent>
     </Form>

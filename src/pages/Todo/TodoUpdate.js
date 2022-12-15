@@ -1,9 +1,16 @@
 import React from "react";
+import styled from "styled-components";
 import ButtonComponent from "../../components/ButtonComponent";
+
+const Wrap = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
 
 export default function TodoListUpdate(props) {
   return (
-    <>
+    <Wrap>
       <input
         type="text"
         value={props.updateVal}
@@ -21,6 +28,6 @@ export default function TodoListUpdate(props) {
           method={props.cancelUpdate}
         ></ButtonComponent>
       </div>
-    </>
+    </Wrap>
   );
 }

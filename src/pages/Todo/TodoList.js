@@ -1,13 +1,24 @@
-import React from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import ButtonComponent from "../../components/ButtonComponent";
 
-const TodoItem = styled.p``;
+const Wrap = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const TodoItem = styled.p`
+  margin: 0 0 0 10px;
+  /* text-decoration: ${(props) => (props.test ? "line-through" : "none")}; */
+`;
 
 export default function TodoList(props) {
   return (
-    <>
-      <TodoItem>{props.todo}</TodoItem>
+    <Wrap>
+      <Wrap>
+        <TodoItem>{props.todo}</TodoItem>
+      </Wrap>
       <div>
         <ButtonComponent
           btnName="수정"
@@ -19,6 +30,6 @@ export default function TodoList(props) {
           method={props.deleteTodoList}
         ></ButtonComponent>
       </div>
-    </>
+    </Wrap>
   );
 }

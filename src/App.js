@@ -16,7 +16,8 @@ function App() {
             <Route path="/" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/todo" element={<Todo />} />
-            <Route path="/*" element={<Error />} />
+            <Route path="/*" element={<Login />} />
+            {/* <Route path="/*" element={<Error />} /> */}
           </Routes>
         </Suspense>
       </BrowserRouter>
