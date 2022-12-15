@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+<<<<<<< HEAD
 import ButtonComponent from "../../components/ButtonComponent";
+=======
+import ButtonComponent from "../../components/button";
+>>>>>>> a2a9156695359666a9a5f01dbcc998171ff89fb7
 
 const TodoItem = styled.p``;
 
