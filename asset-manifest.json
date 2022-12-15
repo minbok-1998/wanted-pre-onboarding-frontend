@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/wanted-pre-onboarding-frontend/static/css/main.094a596e.css",
-    "main.js": "/wanted-pre-onboarding-frontend/static/js/main.33d42aa9.js",
-    "static/js/490.b0bfdd10.chunk.js": "/wanted-pre-onboarding-frontend/static/js/490.b0bfdd10.chunk.js",
+    "main.js": "/wanted-pre-onboarding-frontend/static/js/main.8c7e9e52.js",
+    "static/js/490.12105a12.chunk.js": "/wanted-pre-onboarding-frontend/static/js/490.12105a12.chunk.js",
     "static/js/542.11421cbc.chunk.js": "/wanted-pre-onboarding-frontend/static/js/542.11421cbc.chunk.js",
-    "static/js/731.b0c73582.chunk.js": "/wanted-pre-onboarding-frontend/static/js/731.b0c73582.chunk.js",
+    "static/js/731.c43d9c76.chunk.js": "/wanted-pre-onboarding-frontend/static/js/731.c43d9c76.chunk.js",
     "static/js/193.64cd0d19.chunk.js": "/wanted-pre-onboarding-frontend/static/js/193.64cd0d19.chunk.js",
     "static/js/783.82830a53.chunk.js": "/wanted-pre-onboarding-frontend/static/js/783.82830a53.chunk.js",
     "index.html": "/wanted-pre-onboarding-frontend/index.html",
     "main.094a596e.css.map": "/wanted-pre-onboarding-frontend/static/css/main.094a596e.css.map",
-    "main.33d42aa9.js.map": "/wanted-pre-onboarding-frontend/static/js/main.33d42aa9.js.map",
-    "490.b0bfdd10.chunk.js.map": "/wanted-pre-onboarding-frontend/static/js/490.b0bfdd10.chunk.js.map",
+    "main.8c7e9e52.js.map": "/wanted-pre-onboarding-frontend/static/js/main.8c7e9e52.js.map",
+    "490.12105a12.chunk.js.map": "/wanted-pre-onboarding-frontend/static/js/490.12105a12.chunk.js.map",
     "542.11421cbc.chunk.js.map": "/wanted-pre-onboarding-frontend/static/js/542.11421cbc.chunk.js.map",
-    "731.b0c73582.chunk.js.map": "/wanted-pre-onboarding-frontend/static/js/731.b0c73582.chunk.js.map",
+    "731.c43d9c76.chunk.js.map": "/wanted-pre-onboarding-frontend/static/js/731.c43d9c76.chunk.js.map",
     "193.64cd0d19.chunk.js.map": "/wanted-pre-onboarding-frontend/static/js/193.64cd0d19.chunk.js.map",
     "783.82830a53.chunk.js.map": "/wanted-pre-onboarding-frontend/static/js/783.82830a53.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.094a596e.css",
-    "static/js/main.33d42aa9.js"
+    "static/js/main.8c7e9e52.js"
   ]
 }
